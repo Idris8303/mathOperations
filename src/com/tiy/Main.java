@@ -1,16 +1,25 @@
 package com.tiy;
 import java.util.Scanner;
 
-class Main
-{
-    public static void main(String args[])
-    {
-        int x, y, z;
-        System.out.println("Enter two numbers to calculate their sum ");
-        Scanner in = new Scanner(System.in);
-        x = in.nextInt();
-        y = in.nextInt();
-        z = x + y;
-        System.out.println("the sum of your two numbers is = "+z);
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num1;
+        int num2;
+
+        System.out.print("Enter the first number:");
+        num1 = input.nextInt ();
+
+        System.out.print("Enter the second number:");
+        num2 = input.nextInt ();
+
+        System.out.println();
+        System.out.println(num1 + "+" + num2 + "=" + (num1 + num2));
+        System.out.println(num1 + "-" + num2 + "=" + (num1 - num2));
+        System.out.println(num1 + "*" + num2 + "=" + (num1 * num2));
+        System.out.println(num1 + "/" + num2 + "=" + (num1 * num2));
+
+
     }
 }
